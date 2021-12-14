@@ -1,5 +1,6 @@
 name: 'a action test by wongzz'
-on:[push]
+on:
+  push: 
 
 
 jobs: 
@@ -8,5 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: wuuuuuu
-      uses: actions/checkout@main
       run: echo "niubi"
