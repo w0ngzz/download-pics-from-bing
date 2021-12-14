@@ -1,12 +1,12 @@
 name: 'a action test by wongzz'
+on:[push]
 
-on:
-  push:
-    branches:[ main ]
-    
-    
-jobs:
-  build:
+
+jobs: 
+  build: 
+    name: testt
     runs-on: ubuntu-latest
-    uses: actions/checkout@main
-    run: echo "niubi"
+    steps:
+    - name: wuuuuuu
+      uses: actions/checkout@main
+      run: echo "niubi"
