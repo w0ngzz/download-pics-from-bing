@@ -1,4 +1,4 @@
-name: a action test by wongzz
+name: 'a action test by wongzz'
 
 on:
   push:
