@@ -1,12 +1,21 @@
 name: 'a action test by wongzz'
 on:
   push: 
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 
 jobs: 
   build: 
-    name: testt
+    name: build up
     runs-on: ubuntu-latest
     steps:
-    - name: wuuuuuu
-      run: echo "niubi"
+    - name: check out code 
+      uses: actions/checkout@v2
+      
+    - name: run scripts
+      run: sudo bash test.sh
+      
