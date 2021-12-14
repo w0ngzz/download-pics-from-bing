@@ -1,0 +1,12 @@
+name: a action test by wongzz
+
+on:
+  push:
+    branches:[ main ]
+    
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    uses: actions/checkout@main
+    run: echo "niubi"
